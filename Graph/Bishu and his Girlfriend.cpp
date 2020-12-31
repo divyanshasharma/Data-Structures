@@ -48,5 +48,5 @@ void solve()
 			hh = min(hh, s);
 		}
 	}
-	cout << hh << endl;
+	cout << hh<< endl;
 }
