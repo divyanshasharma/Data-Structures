@@ -77,7 +77,6 @@ int query(int si , int ss , int se , int qs , int qe,vector<int>&st,vector<int>&
 	int mid = (ss + se) / 2;
 	return query(2 * si , ss , mid , qs , qe,st,lazy,ar) + query(2 * si + 1 , mid + 1 , se , qs , qe,st,lazy,ar);
 }
-
 void update(int si , int ss , int se , int qs , int qe , int val,vector<int>&st,vector<int>&lazy,vector<int>&ar)
 {
 	if (lazy[si] != 0)
