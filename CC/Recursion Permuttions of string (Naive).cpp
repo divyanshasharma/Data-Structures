@@ -13,3 +13,25 @@ void solve()
 	string h = "";
 	permutationss(a, h);
 }
+
+
+Method 2
+	void permutationss(string a,  int j) {
+	if (a.size() == j) {
+		cout << a << endl;
+		return;
+	}
+	for (int i = 0; i < a.size(); i++)
+	{
+		swap(a[i], a[j]);
+		permutationss(a, j + 1);
+		swap(a[i], a[j]);
+	}
+}
+void solve()
+{
+	string a;
+	cin >> a;
+	string h = "";
+	permutationss(a, 0);
+}
