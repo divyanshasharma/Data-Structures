@@ -19,3 +19,24 @@
         }
         return m;
     }  
+
+//Method 2
+int maxCandy(int h[], int n) 
+{
+	int i=0,j=n-1;
+	int a=0;
+	while(i<j){
+		a=max(a,min(h[i],h[j])*(j-i-1));
+		if(h[i]>h[j]){
+			j--;
+		}
+		else if(h[i]<h[j]){
+			i++;
+		}
+		else{
+			i++;
+			j--;
+		}
+	}
+	return a;
+}
