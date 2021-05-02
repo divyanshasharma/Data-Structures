@@ -1,3 +1,4 @@
+#https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/submissions/
 class trieNode {
 public:
 	trieNode *left = NULL, *right = NULL;
